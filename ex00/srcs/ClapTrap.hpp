@@ -6,7 +6,7 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 23:57:58 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/16 00:10:31 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/03/17 14:33:29 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ class ClapTrap
 
 	private	:
 				std::string	name;
-				int			HitPoints = 10;
-				int			EnergyPoints = 10;
-				int			AttckDmg = 0;
+				unsigned int			HitPoints;
+				unsigned int			EnergyPoints;
+				unsigned int			AttckDmg;
 };
 
 #endif

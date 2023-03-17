@@ -6,7 +6,7 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 15:39:16 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/17 16:12:03 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/03/18 00:11:47 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,25 +51,25 @@ void	ScavTrap::guardGate(void)
 {
 	if (this->EnergyPoints > 0)
 	{
-		std::cout << "ScavTrap " << this->name << " is in Gate keeper mode" <<std::endl;
+		std::cout << "(ScavTrap) " << this->name << " is in Gate keeper mode" <<std::endl;
 		this->EnergyPoints--;
-		std::cout << "Scavtrap " << this->name << "'s Energy Points has been reduced to "
+		std::cout << "(Scavtrap) " << this->name << "'s Energy Points has been reduced to "
 			<< this->EnergyPoints << std::endl;
 	}
 	else
-		std::cout << "ScavTrap " << this->name << " does not have enough energy to guard" << std::endl;
+		std::cout << "(ScavTrap) " << this->name << " does not have enough energy to guard" << std::endl;
 }
 
 void	ScavTrap::attack(const std::string &target)
 {
 	if (this->EnergyPoints > 0)
 	{
-		std::cout << "Scavtrap " << this->name << " attacks " << target
+		std::cout << "(Scavtrap) " << this->name << " attacks " << target
 			<< ", causing " << this->AttckDmg << " points of damage!" << std::endl;
 		this->EnergyPoints--;
-		std::cout << "Scavtrap " << this->name << "'s Energy Points has been reduced to "
+		std::cout << "(Scavtrap) " << this->name << "'s Energy Points has been reduced to "
 			<< this->EnergyPoints << std::endl;
 	}
 	else
-		std::cout << "ScavTrap " << this->name << " does not have enough energy to attack." << std::endl;
+		std::cout << "(ScavTrap) " << this->name << " does not have enough energy to attack." << std::endl;
 }

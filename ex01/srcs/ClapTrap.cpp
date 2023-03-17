@@ -6,11 +6,16 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 00:13:55 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/17 15:32:40 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/03/17 15:56:39 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap(void)
+{
+	std::cout << "(ClapTrap) Default constructor called" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string	name)
 {
@@ -18,12 +23,12 @@ ClapTrap::ClapTrap(std::string	name)
 	this->HitPoints = 10;
 	this->EnergyPoints = 10;
 	this->AttckDmg = 0;
-	std::cout << "Constructor for ("<< this->name << ") called"<< std::endl;
+	std::cout << "(ClapTrap) Constructor for ("<< this->name << ") called"<< std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor for ("<< this->name << ") called"<< std::endl;
+	std::cout << "(ClapTrap) Destructor for ("<< this->name << ") called"<< std::endl;
 }
 
 /* Copy Operator */

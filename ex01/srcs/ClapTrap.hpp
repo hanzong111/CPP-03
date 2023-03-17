@@ -6,7 +6,7 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 23:57:58 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/17 15:25:45 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/03/17 15:56:43 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class ClapTrap
 {
 	public	:
 				/*	Orthodox Canonical Class Form */
+				ClapTrap(void);
 				ClapTrap(std::string name);
 				ClapTrap(ClapTrap &src);
 				~ClapTrap();
@@ -35,7 +36,7 @@ class ClapTrap
 				unsigned int	getEP(void);
 				unsigned int	getAttckDmg(void);
 
-	private	:
+	protected :
 				std::string	name;
 				unsigned int			HitPoints;
 				unsigned int			EnergyPoints;

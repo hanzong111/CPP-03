@@ -6,11 +6,11 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 16:41:59 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/17 15:27:47 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/03/17 16:13:11 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main( void )
 {
@@ -26,6 +26,10 @@ int main( void )
 	hanz.beRepaired(10);
 	hanz.attack(target);
 	hanz.takeDamage(14);
+
+	ScavTrap	vanisa("vanisa");
+
+	vanisa.attack(target);
 
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 15:39:16 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/18 00:11:47 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/05/26 13:51:47 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ ScavTrap::~ScavTrap(void)
 }
 
 /* Copy Operator */
-// ScavTrap::ScavTrap(ScavTrap &src)
-// {
-// 	*this = src;
-// }
+ScavTrap::ScavTrap(ScavTrap &src)
+{
+	*this = src;
+}
 
 /*	Copy assignation operator */
 ScavTrap	&ScavTrap::operator=(ScavTrap &src)

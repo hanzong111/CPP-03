@@ -6,7 +6,7 @@
 /*   By: ojing-ha <ojing-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 16:41:59 by ojing-ha          #+#    #+#             */
-/*   Updated: 2023/03/18 00:15:21 by ojing-ha         ###   ########.fr       */
+/*   Updated: 2023/05/26 13:52:53 by ojing-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ int main( void )
 	// hanz.attack(target);
 	// hanz.takeDamage(14);
 
-	ScavTrap	vanisa("vanisa");
+	ScavTrap	benny("benny");
 
-	vanisa.attack(target);
-	vanisa.beRepaired(20);
-	std::cout << "Name of Scavtrap is : " << vanisa.getName() << std::endl;
-	vanisa.guardGate();
+	benny.attack(target);
+	benny.beRepaired(20);
+	std::cout << "Name of Scavtrap is : " << benny.getName() << std::endl;
+	benny.guardGate();
 
 
 	return (0);
